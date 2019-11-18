@@ -32,11 +32,31 @@ class IdentityController extends AdminController
             ->body($this->grid());
     }
 
+    public function show($id, Content $content)
+    {
+        return $content
+            ->header('Show')
+            ->description('identity')
+            ->body($this->detail($id));
+    }
+
+    public function create(Content $content)
+    {
+        return $content
+            ->header('Create')
+            ->description('identity')
+            ->body($this->form());
+    }
+
     protected function grid()
     {
         $grid = new Grid(new Identity);
         $grid->id('Id');
         $grid->name('Name');
+        $grid->jobs('Jobs');
+        $grid->birth_date('Birth Date');
+        $grid->phone_number('Phone');
+        $grid->email('Email');
 
         return $grid;
     }
@@ -64,8 +84,16 @@ class IdentityController extends AdminController
     protected function form()
     {
         $form = new Form(new Identity);
-
-
+        $form->text('name', 'Name');
+        $form->text('jobs', 'Jobs');
+        $form->textarea('description', 'Description')->rows(5);
+        $form->date('birth_date', 'Birth Date');
+        $form->mobile('phone_number', 'Phone Number')->options(['mask' => '9999 9999 99999']);
+        $form->email('email', 'Email');
+        $form->textarea('address', 'Address')->rows(3);
+        $form->url('facebook', 'Facebook');
+        $form->url('twitter', 'Twitter');
+        $form->url('linkedin', 'LinkedIn');
 
         return $form;
     }
