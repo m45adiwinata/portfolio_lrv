@@ -35,8 +35,8 @@ class IdentityController extends AdminController
     protected function grid()
     {
         $grid = new Grid(new Identity);
-
-
+        $grid->id('Id');
+        $grid->name('Name');
 
         return $grid;
     }
