@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('start');
 });
+Route::get('/about', 'HomeController@about')->name('about');
 
 Auth::routes();
 

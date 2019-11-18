@@ -1,37 +1,4 @@
-<!--================Home Banner Area =================-->
-<section class="home_banner_area">
-   	<div class="container box_1620">
-   		<div class="banner_inner d-flex align-items-center">
-			<div class="banner_content">
-				<div class="media">
-					<div class="d-flex">
-						<img src="{{asset('img/personal.jpg')}}" alt="">
-					</div>
-					<div class="media-body">
-						<div class="personal_text">
-							<h6>Hello Everybody, i am</h6>
-							<h3>Donald McKinney</h3>
-							<h4>Junior UI/UX Developer</h4>
-							<p>You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p>
-							<ul class="list basic_info">
-								<li><a href="#"><i class="lnr lnr-calendar-full"></i> 31st December, 1992</a></li>
-								<li><a href="#"><i class="lnr lnr-phone-handset"></i> 44 (012) 6954 783</a></li>
-								<li><a href="#"><i class="lnr lnr-envelope"></i> businessplan@donald</a></li>
-								<li><a href="#"><i class="lnr lnr-home"></i> Santa monica bullevard</a></li>
-							</ul>
-							<ul class="list personal_social">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </div>
-</section>
-<!--================End Home Banner Area =================-->
+@include('components.banner')
 
 <!--================Welcome Area =================-->
 <section class="welcome_area p_120">
@@ -40,26 +7,31 @@
 			<div class="col-lg-6">
 				<div class="welcome_text">
 					<h4>About Myself</h4>
-					<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
+					<p>
+						I love sports, travelling, and playing games. Sport I do like is futsal and riding bike.
+						I do futsal every Tuesday or Wednesday, and I riding bike almost everyday. I would like to
+						travelling anywhere with my family and colleagues. After working my bussiness, I entertaint
+						my self by playing Dota 2.
+					</p>
 					<div class="row">
 						<div class="col-md-4">
 							<div class="wel_item">
 								<i class="lnr lnr-database"></i>
-								<h4>$2.5M</h4>
+								<h4>IDR 3.2M</h4>
 								<p>Total Donation</p>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="wel_item">
 								<i class="lnr lnr-book"></i>
-								<h4>1465</h4>
+								<h4>20</h4>
 								<p>Total Projects</p>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="wel_item">
 								<i class="lnr lnr-users"></i>
-								<h4>3965</h4>
+								<h4>40</h4>
 								<p>Total Volunteers</p>
 							</div>
 						</div>
@@ -70,15 +42,7 @@
 				<div class="tools_expert">
 					<div class="skill_main">
 						<div class="skill_item">
-							<h4>After Effects <span class="counter">85</span>%</h4>
-							<div class="progress_br">
-								<div class="progress">
-									<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-						</div>
-						<div class="skill_item">
-							<h4>Photoshop <span class="counter">90</span>%</h4>
+							<h4>Python <span class="counter">90</span>%</h4>
 							<div class="progress_br">
 								<div class="progress">
 									<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
@@ -86,15 +50,23 @@
 							</div>
 						</div>
 						<div class="skill_item">
-							<h4>Illustrator <span class="counter">70</span>%</h4>
+							<h4>C++ <span class="counter">80</span>%</h4>
 							<div class="progress_br">
 								<div class="progress">
-									<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+									<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 							</div>
 						</div>
 						<div class="skill_item">
-							<h4>Sublime <span class="counter">95</span>%</h4>
+							<h4>PHP <span class="counter">75</span>%</h4>
+							<div class="progress_br">
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+						<div class="skill_item">
+							<h4>Javascript <span class="counter">95</span>%</h4>
 							<div class="progress_br">
 								<div class="progress">
 									<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
@@ -102,10 +74,18 @@
 							</div>
 						</div>
 						<div class="skill_item">
-							<h4>Sketch <span class="counter">75</span>%</h4>
+							<h4>MYSQL <span class="counter">85</span>%</h4>
 							<div class="progress_br">
 								<div class="progress">
-									<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+									<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+						<div class="skill_item">
+							<h4>MongoDB <span class="counter">65</span>%</h4>
+							<div class="progress_br">
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 							</div>
 						</div>
@@ -136,11 +116,11 @@
 							<span></span>
 							<div class="media">
 								<div class="d-flex">
-									<p>March 2017 to present</p>
+									<p>09-03-2018 to 11-03-2018</p>
 								</div>
 								<div class="media-body">
-									<h4>Colorlib</h4>
-									<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+									<h4>Intern</h4>
+									<p>Internship <br />Central Government, Badung</p>
 								</div>
 							</div>
 						</li>
@@ -148,11 +128,23 @@
 							<span></span>
 							<div class="media">
 								<div class="d-flex">
-									<p>March 2017 to present</p>
+									<p>02-01-2019 to present</p>
 								</div>
 								<div class="media-body">
-									<h4>Colorlib</h4>
-									<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+									<h4>Jockey</h4>
+									<p>Computer Science Essay<br />Denpasar, Bali</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<span></span>
+							<div class="media">
+								<div class="d-flex">
+									<p>02-03-2019 to 04-13-2019</p>
+								</div>
+								<div class="media-body">
+									<h4>Employee</h4>
+									<p>Web Programmer<br />C.V. Tridatu Solution, Bali</p>
 								</div>
 							</div>
 						</li>
@@ -160,11 +152,11 @@
 						<span></span>
 							<div class="media">
 								<div class="d-flex">
-									<p>March 2017 to present</p>
+									<p>07-30-2019 to present</p>
 								</div>
 								<div class="media-body">
-									<h4>Colorlib</h4>
-									<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+									<h4>Freelance</h4>
+									<p>Programmer <br />On <a href="https://projects.co.id/">projects.co.id</a></p>
 								</div>
 							</div>
 						</li>
@@ -176,11 +168,11 @@
 							<span></span>
 							<div class="media">
 								<div class="d-flex">
-									<p>March 2017 to present</p>
+									<p>Around 2003 to 2009</p>
 								</div>
 								<div class="media-body">
-									<h4>Colorlib</h4>
-									<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+									<h4>Student</h4>
+									<p>Elementary School <br />SD. 3. 4 Banjar Jawa, Singaraja</p>
 								</div>
 							</div>
 						</li>
@@ -188,23 +180,35 @@
 							<span></span>
 							<div class="media">
 								<div class="d-flex">
-									<p>March 2017 to present</p>
+									<p>Around 2009 to 2012</p>
 								</div>
 								<div class="media-body">
-									<h4>Colorlib</h4>
-									<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+									<h4>Student</h4>
+									<p>Middle School <br />SMP N 1 Singaraja, Singaraja</p>
 								</div>
 							</div>
 						</li>
 						<li>
-						<span></span>
+							<span></span>
 							<div class="media">
 								<div class="d-flex">
-									<p>March 2017 to present</p>
+									<p>Around 2012 to 2015</p>
 								</div>
 								<div class="media-body">
-									<h4>Colorlib</h4>
-									<p>Senior Web Developer <br />Santa monica, Los angeles</p>
+									<h4>Student</h4>
+									<p>High School <br />SMA N 1 Singaraja, Singaraja</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<span></span>
+							<div class="media">
+								<div class="d-flex">
+									<p>Around 2015 to 2019</p>
+								</div>
+								<div class="media-body">
+									<h4>Bachelor</h4>
+									<p>College <br />Universitas Udayana</p>
 								</div>
 							</div>
 						</li>
@@ -221,28 +225,32 @@
 	<div class="container">
 		<div class="main_title">
 			<h2>offerings to my clients</h2>
-			<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
+			<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as IDR 800.000 each.</p>
 		</div>
 		<div class="feature_inner row">
 			<div class="col-lg-4 col-md-6">
 				<div class="feature_item">
 					<i class="flaticon-city"></i>
-					<h4>Architecture</h4>
-					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
+					<h4>Desktop Apps</h4>
+					<p>
+						If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as IDR 800.000 each.
+					</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<div class="feature_item">
 					<i class="flaticon-skyline"></i>
-					<h4>Interior Design</h4>
-					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
+					<h4>Website / Web Apps</h4>
+					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as IDR 800.000 each.</p>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<div class="feature_item">
 					<i class="flaticon-sketch"></i>
-					<h4>Concept Design</h4>
-					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
+					<h4>Essay Jockey</h4>
+					<p>
+						If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as IDR 800.000 each.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -260,10 +268,10 @@
 		<div class="isotope_fillter">
 			<ul class="gallery_filter list">
 				<li class="active" data-filter="*"><a href="#">All</a></li>
-				<li data-filter=".brand"><a href="#">Vector</a></li>
-				<li data-filter=".manipul"><a href="#">Raster</a></li>
-				<li data-filter=".creative"><a href="#">UI/UX</a></li>
-				<li data-filter=".design"><a href="#">Printing</a></li>
+				<li data-filter=".brand"><a href="#">Python</a></li>
+				<li data-filter=".manipul"><a href="#">PHP</a></li>
+				<li data-filter=".creative"><a href="#">Javascript</a></li>
+				<li data-filter=".design"><a href="#">Frameworks</a></li>
 			</ul>
 		</div>
 	</div>
