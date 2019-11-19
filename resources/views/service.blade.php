@@ -2,9 +2,10 @@
 
 @section('content')
 @include('components.header')
-@include('components.aboutme')
-@include('components.mytabs')
+@include('components.feature')
 @include('components.footer')
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.js"></script>
 <script src="js/bootstrap.min.js"></script>

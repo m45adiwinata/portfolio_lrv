@@ -2,7 +2,13 @@
 
 @section('content')
 @include('components.header')
-@include('components.homebody')
+
+@include('components.banner')
+@include('components.aboutme')
+@include('components.mytabs')
+@include('components.projects')
+@include('components.testimony')
+
 @include('components.footer')
 <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
 <script src="{{asset('js/popper.js')}}"></script>

@@ -48,6 +48,14 @@ class IdentityController extends AdminController
             ->body($this->form());
     }
 
+    public function edit($id, Content $content)
+    {
+        return $content
+            ->header('Edit')
+            ->description('identity')
+            ->body($this->form()->edit($id));
+    }
+
     protected function grid()
     {
         $grid = new Grid(new Identity);
@@ -94,6 +102,7 @@ class IdentityController extends AdminController
         $form->url('facebook', 'Facebook');
         $form->url('twitter', 'Twitter');
         $form->url('linkedin', 'LinkedIn');
+        $form->image('picture_path', 'Picture')->move('/images')->uniqueName();
 
         return $form;
     }
