@@ -16,5 +16,5 @@ Route::group([
     $router->resource('/experiences', ExperienceController::class);
     $router->resource('/education', EducationController::class);
     $router->resource('/features', FeatureController::class);
-
+    $router->resource('/skills', SkillController::class);
 });
